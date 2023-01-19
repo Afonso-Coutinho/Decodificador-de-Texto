@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="reset.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="script.js"></script>
+	<title>Decodificador de Texto - Alura Challenges Oracle ONE</title>
+</head>
+<body>
+
+	<header>
+		<h1>
+			<img class="logo" src="imagens/logo.png" alt="Logo Alura">
+		</h1>
+	</header>
+
+	<main>
+		<section>
+			<textarea class="entradaTexto" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+
+			<div class="informacao">
+				<h6>&#8505; Apenas letras minúsculas e sem acento.</h6>
+			</div>
+
+			<div class="botoes">
+				<button onclick="criptografarTexto()" class="btnEncriptografar">Criptografar</button>
+				<button onclick="desencriptografarTexto()" class="btnDesencriptografar">Descriptografar</button>
+			</div>
+		</section>
+
+		<section>
+			<textarea id="manipula" class="textEncriptografado" cols="20" rows="10"></textarea>
+			<button id="copiar" class="btnCopiar" onclick="copiar()">Copiar</button>
+		</section>
+	</main>
+	<div>
+		<h1></h1>
+	</div>
+
+	<footer class="rodape">
+		<p class="copyright">&copy; Copyright Afonso Coutinho & ONE - 2023</p>
+	</footer>
+
+</body>
+</html>
